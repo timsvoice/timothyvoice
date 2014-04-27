@@ -1,0 +1,34 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  padding-bottom: 3rem;
+}
+
+hr {
+	margin: 0;
+}
+
+:focus {
+	background:white;
+}
+
+.vcard {
+	border:none;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.branding {
+  height: 80%;
+}
+
+.splash-height { 
+  background-color: #FFCC00;
+}
