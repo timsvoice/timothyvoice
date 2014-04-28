@@ -25,10 +25,31 @@ hr {
 	display: none !important;
 }
 
-.branding {
-  height: 80%;
+.fixer {
+  position: fixed;
+  z-index: 0;
 }
 
-.splash-height { 
-  background-color: #FFCC00;
+.projects {
+  background: #fff;
+  padding-top: 3rem;
+}
+
+.top-bar-section {
+  ul, li:not(.has-form) a:not(.button), ul li > a {
+    background: inherit;
+    &:hover {
+      background: inherit;
+    }
+  }
+}
+
+#mask {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0; 
+    background-color:white; 
+    z-index:99;
 }

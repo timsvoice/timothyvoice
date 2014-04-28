@@ -1,0 +1,39 @@
+$indent: 6rem;
+
+.branding-title {
+  margin-bottom: 0;
+  font-size: $indent;
+  font-weight: $heavy-text;
+  @media only screen and (max-width: 40em) { 
+    font-size: $indent / 2;
+  }
+}
+
+.indent {
+  padding-left: $indent * 1.25;
+  @media only screen and (max-width: 40em) { 
+    padding-left: ($indent * 1.25) / 2;
+  }
+}
+
+.branding-byline {
+  font-size: 2.45rem;
+  font-weight: $light-text;
+  @media only screen and (max-width: 40em) { 
+    font-size: 1.2rem;
+  }
+}
+
+//navigation
+
+.top-bar-section {
+  padding-top: 0.75rem;
+  ul, li:not(.has-form) a:not(.button), ul li > a {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: $light-text;
+    &:hover {
+      color: black;
+  }
+  }
+}

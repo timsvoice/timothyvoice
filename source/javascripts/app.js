@@ -10,3 +10,7 @@ function resize() {
       resize();
 };
 
+$(window).load(function () {
+    $('#mask').fadeOut('2000');
+});
+
