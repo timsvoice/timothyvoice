@@ -1,0 +1,15 @@
+.projects-single-container {
+  position: relative;
+}
+ 
+.stickit {
+  position: fixed !important;
+  top: 0 !important;
+  max-width: 323px !important;
+}
+ 
+.stickit-end {
+  bottom: 0;
+  position: absolute !important;
+  left: 0;
+}

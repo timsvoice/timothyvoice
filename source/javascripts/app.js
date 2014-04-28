@@ -14,24 +14,12 @@ $(window).load(function () {
     $('#mask').fadeOut('3000');
 });
 
-//sticky nav
-
-$(document).ready(function() {
-var stickyNavTop = $('.projects-summary').offset().top;
- 
-var stickyNav = function(){
-var scrollTop = $(window).scrollTop();
-     
-if (scrollTop > stickyNavTop) {
-    $('.projects-summary').addClass('sticky');
-} else {
-    $('.projects-summary').removeClass('sticky');
-}
-};
- 
-stickyNav();
- 
-$(window).scroll(function() {
-  stickyNav();
-});
-});
+$('.projects-container').stickem({
+   item: '.projects-summary',
+   container: '.projects-single-container',
+   stickClass: 'stickit',
+   endStickClass: 'stickit-end',
+   offset: 0,
+   onStick: null,
+   onUnstick: null
+ });
