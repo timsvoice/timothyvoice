@@ -10,3 +10,12 @@
   background-color: #fff;
   height: 4rem;
 }
+
+.top-bar-section {
+  ul, li:not(.has-form) a:not(.button), ul li > a {
+    background: inherit;
+    &:hover {
+      background: inherit;
+    }
+  }
+}

@@ -30,18 +30,9 @@ hr {
   z-index: 0;
 }
 
-.projects {
+.projects-container {
   background: #fff;
   padding-top: 3rem;
-}
-
-.top-bar-section {
-  ul, li:not(.has-form) a:not(.button), ul li > a {
-    background: inherit;
-    &:hover {
-      background: inherit;
-    }
-  }
 }
 
 #mask {
@@ -52,4 +43,12 @@ hr {
     bottom:0; 
     background-color:white; 
     z-index:99;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+  margin-top: 0rem;
 }
