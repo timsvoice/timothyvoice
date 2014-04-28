@@ -1,0 +1,7 @@
+.button.secondary {
+  background-color: $white;
+  border: $border-thin;
+  &:hover {
+    background: darken($transparent-white, 15%);
+  }
+}

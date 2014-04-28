@@ -2,7 +2,7 @@ $(document).foundation();
 
 function resize() {
       var heights = window.innerHeight;
-      document.getElementById("splash").style.height = heights -32 + "px";
+      document.getElementById("splash").style.height = heights -64 + "px";
   }
 
   resize();
@@ -23,3 +23,4 @@ $('.projects-container').stickem({
    onStick: null,
    onUnstick: null
  });
+

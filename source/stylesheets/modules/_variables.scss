@@ -1,22 +1,50 @@
+// Media Queries
+
+// Small screens
+// @media only screen { } /* Define mobile styles */
+
+// @media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+// @media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+// @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+// @media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+// @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+// @media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+// @media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+// @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
+
 /* ============================ 
 	Colors
 ============================ */
 
+$branding-color: hsla(202, 89, 58%, 1);
+// $branding-color: hsla(209, 32, 59%, 1);
 $gray: hsla(0,0,91%,1);
 $light-gray: hsla(0,0,60%,1);
 $white: hsla(0,0,100%,1);
-$transparent-white: hsla(0,0,100%,0.95);
+$transparent-white: hsla(0,0,100%,0.5);
 $dark-gray: hsla(0,0,53%,1);
 $black: hsla(0,0,0%,1);
 $navy-black: hsla(219,100,13%,1);
 $transparent-black: hsla(0,0,0%,0.75);
+$accent: hsla(202, 89, 58%, 1);
 
 /* ============================ 
 	Typography
 ============================ */
 
-$body-font: "pragmatica-web", Helvetica, Arial, sans-serif;
-$text-font: "minion-pro", Times, serif;
+$body-font: "Raleway", Helvetica, Arial, sans-serif;
+$text-font: "Lato", Times, serif;
 
 $heavy-text:900;
 $medium-text:400;
@@ -29,8 +57,9 @@ $underline: 0.0625rem dotted;
 ============================ */
 
 $border-thick: 0.125rem $black solid;
-$border-thin:  0.125rem $gray solid;
+$border-thin:  0.125rem $black solid;
 
 /* ============================ 
 	Backgrounds
 ============================ */
+

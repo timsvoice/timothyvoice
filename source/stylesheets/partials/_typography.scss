@@ -2,6 +2,7 @@ $indent: 6rem;
 
 .branding-title {
   margin-bottom: 0;
+  font-family: $body-font;
   font-size: $indent;
   font-weight: $heavy-text;
   @media only screen and (max-width: 40em) { 
@@ -24,7 +25,7 @@ $indent: 6rem;
   }
 }
 
-//navigation
+// navigation
 
 .top-bar-section {
   padding-top: 0.75rem;
@@ -35,5 +36,20 @@ $indent: 6rem;
     &:hover {
       color: black;
   }
+  }
+}
+
+// projects
+
+.projects-single-title {
+  font-family: $body-font;
+  font-weight: $heavy-text;
+}
+
+.projects-single-teaser {
+  font-family: $text-font;
+  font-size: 1.1rem;
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    @include medium-text;
   }
 }
