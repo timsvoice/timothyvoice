@@ -6,6 +6,14 @@ body {
   padding-bottom: 3rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $body-font;
+}
+
+p {
+  font-family: $text-font;
+}
+
 hr {
 	margin: 0;
 }
@@ -72,3 +80,23 @@ hr {
   padding-top: 2rem;
 }
 
+.about-band, .about {
+  background: $branding-color;
+}
+
+.about-band {
+  padding-bottom: 3rem;
+}
+
+.about-tool-list {
+
+}
+
+.contact-band {
+  padding-bottom: 3rem;
+  background: $gray;
+}
+
+.contact-container {
+  height: 7rem;
+}
