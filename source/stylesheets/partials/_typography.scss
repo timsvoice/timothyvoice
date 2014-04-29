@@ -1,4 +1,4 @@
-$indent: 6rem;
+$indent: 7rem;
 
 .branding-title {
   margin-bottom: 0;
@@ -18,10 +18,10 @@ $indent: 6rem;
 }
 
 .branding-byline {
-  font-size: 2.45rem;
+  font-size: 2.8rem;
   font-weight: $light-text;
   @media only screen and (max-width: 40em) { 
-    font-size: 1.2rem;
+    font-size: 1.41rem;
   }
 }
 
@@ -32,7 +32,7 @@ $indent: 6rem;
   ul, li:not(.has-form) a:not(.button), ul li > a {
     color: black;
     font-size: 1.5rem;
-    font-weight: $light-text;
+    font-weight: $heavy-text;
     &:hover {
       color: black;
   }
@@ -43,12 +43,16 @@ $indent: 6rem;
 
 .projects-single-title {
   font-family: $body-font;
-  font-weight: $heavy-text;
+  font-weight: $light-text;
+  color: $white;
+  font-size: 1.75rem;
 }
 
 .projects-single-teaser {
   font-family: $text-font;
+  font-weight: $light-text;
   font-size: 1.1rem;
+  color: $light-gray;
   @media only screen and (min-width: 40.063em) and (max-width: 64em) {
     @include medium-text;
   }

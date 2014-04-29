@@ -1,7 +1,16 @@
 .button.secondary {
-  background-color: $white;
-  border: $border-thin;
+  background-color: inherit;
+  @include border-light($light-gray, 0.0625rem);
+  color: $light-gray;
+  font-size: 1rem;
+  font-weight: $light-text;
+  font-family: $body-font;
+  transition: all 0.1s ease-out 0.1s;
   &:hover {
-    background: darken($transparent-white, 15%);
+    // background: darken($transparent-white, 15%);
+    color: $white;
+    background: inherit;
+    @include border-light($white, 0.0625rem);
+    transition: all 0.2s ease-out 0.2s;
   }
 }

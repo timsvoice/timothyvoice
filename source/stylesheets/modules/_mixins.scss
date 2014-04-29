@@ -1,3 +1,11 @@
 @mixin medium-text() {
   font-size: 0.85rem;
 }
+
+@mixin border-light($color, $width: 0.0675rem) {
+  border: $width $color solid;
+}
+
+@mixin border-heavy($color, $width: 0.125rem) {
+  border: $width $color solid;;
+}

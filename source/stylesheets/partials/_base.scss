@@ -55,7 +55,7 @@ hr {
 }
 
 .projects-ggs-band {
-  background: $ggs-color;
+  background: darken($ggs-color, 10%);
 }
 
 .projects-ggs-container {
@@ -64,7 +64,7 @@ hr {
 }
 
 .projects-octavejournal-band {
-  background: $octavejournal-color;
+  background: darken($octavejournal-color, 15%);
 }
 
 .projects-octavejournal-container {
