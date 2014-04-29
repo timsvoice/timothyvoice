@@ -41,15 +41,34 @@ hr {
     left:0; 
     right:0; 
     bottom:0; 
-    background-color: $branding-color; 
+    background-color: $white; 
     z-index:99;
 }
 
 #splash {
-  background: $branding-color;
+  background: $white;
 }
 
 .branding-band {
-  background: $branding-color;
+  background: $white;
   width: 100%;
 }
+
+.projects-ggs-band {
+  background: $ggs-color;
+}
+
+.projects-ggs-container {
+  @extend .projects-ggs-band;
+  padding-top: 2rem;
+}
+
+.projects-octavejournal-band {
+  background: $octavejournal-color;
+}
+
+.projects-octavejournal-container {
+  @extend .projects-octavejournal-band;
+  padding-top: 2rem;
+}
+
