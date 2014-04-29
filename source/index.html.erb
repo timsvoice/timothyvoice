@@ -1,6 +1,9 @@
 ---
 title: Timothy Voice
 ---
+
+<div id="mask"></div>
+
 <div class="branding-band">
   <div class="row">
     <div id="splash" class="small-12 medium-12 large-12 columns branding">
@@ -30,7 +33,7 @@ title: Timothy Voice
             <p class="projects-single-teaser">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, molestias, error dicta earum sed ipsum velit blanditiis provident eveniet et.
             </p>
-            <a href="#" class="small secondary button">View Project</a>
+            <%= link_to 'View Project', '/ggs.html', :relative => true, :class => "small secondary button" %>
           </div><!-- projects-summary -->
           <div class="small-12 medium-8 large-8 columns">
             <%= image_tag 'greatgreensources_full_mockup.png'  %> 
