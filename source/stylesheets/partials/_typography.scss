@@ -47,8 +47,8 @@ $indent: 6rem;
 
 .projects-single-title {
   font-family: $body-font;
-  font-weight: $light-text;
-  color: $white;
+  font-weight: $heavy-text;
+  color: $black;
   font-size: 1.75rem;
 }
 
@@ -56,7 +56,7 @@ $indent: 6rem;
   font-family: $text-font;
   font-weight: $light-text;
   font-size: 1.1rem;
-  color: $light-gray;
+  color: $dark-gray;
   @media only screen and (min-width: 40.063em) and (max-width: 64em) {
     @include medium-text;
   }

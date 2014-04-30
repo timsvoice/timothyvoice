@@ -9,3 +9,7 @@
 @mixin border-heavy($color, $width: 0.125rem) {
   border: $width $color solid;;
 }
+
+@mixin transition($timing: 200, $elements: all) {
+  transition: $elements $timing ease $timing;   
+}

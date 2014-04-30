@@ -7,7 +7,7 @@
 }
 
 .top-bar {
-  background-color: $white;
+  @extend #splash;
   height: 4rem;
 }
 

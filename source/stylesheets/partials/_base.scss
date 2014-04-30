@@ -54,28 +54,30 @@ hr {
 }
 
 #splash {
-  background: $white;
+  background: $branding-color;
 }
 
 .branding-band {
-  background: $white;
+  @extend #splash;
   width: 100%;
 }
 
 .projects-ggs-band {
-  background: darken($ggs-color, 10%);
+  // background: darken($ggs-color, 10%);
+  background: $white;
 }
 
-.projects-ggs-container {
+.projects-container .ggs{
   @extend .projects-ggs-band;
   padding-top: 2rem;
 }
 
 .projects-octavejournal-band {
-  background: darken($octavejournal-color, 15%);
+  // background: darken($octavejournal-color, 15%);
+  background: $white;
 }
 
-.projects-octavejournal-container {
+.projects-container .octavejournal{
   @extend .projects-octavejournal-band;
   padding-top: 2rem;
 }
