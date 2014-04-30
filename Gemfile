@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 
 gem "middleman"
 gem "rack-contrib"
-gem "puma"
+gem "unicorn"
 
 # Live-reloading plugin
 gem "middleman-livereload"
