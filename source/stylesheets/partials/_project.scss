@@ -1,0 +1,26 @@
+.project-title {
+  border-bottom: $border-thick;
+}
+
+.mockup, .detail {
+  background: $white;
+}
+
+.mockup-image, .detail-container {
+  padding-top: 2rem;
+  background: $white;
+}
+
+.project-single-image {
+  @include project-frame($light-gray);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.detail {
+  margin-bottom: 5rem;
+}
+
+.tags {
+  margin-bottom: 1rem;
+}

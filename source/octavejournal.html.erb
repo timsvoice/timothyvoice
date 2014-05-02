@@ -1,0 +1,98 @@
+---
+layout: project
+
+tech: 
+  - HTML/Sass/jQuery
+  - Wordpress
+  - Foundation
+  - Ink 
+
+phases: 
+  - Concept
+  - Design
+  - Development
+  - Deployment
+  - Content
+
+source:
+  - https://github.com/timsvoice/octavejournal
+
+link:
+  - http://www.octavejournal.com
+---
+
+<div class="branding-band">
+  <div class="row">
+    <div id="splash" class="small-12 medium-12 large-12 columns project ggs">
+      <div class="fixer">
+        <div class="small-12 medium-6 large-4 columns alpha project-description">
+          <h1 class="project-title">
+          Octave <br> Journal
+        </h1>
+        <p class="project-intro">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, natus libero sint aliquam officiis quis illo itaque fugiat harum voluptas optio ullam consectetur atque voluptatum laborum ratione mollitia accusantium consequatur doloribus praesentium? Assumenda eaque suscipit perferendis pariatur nemo rem quidem nulla veritatis blanditiis. Blanditiis aspernatur distinctio reiciendis. Sit, error vel.
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="project-carousel" class="owl-carousel mockup">      
+ 
+    <div class="item">
+        
+        <div class="mockup-image small-12 columns">
+          <div class="small-12 medium-10 large-10 columns medium-centered">
+          <%= image_tag 'octavejournal_full_mockup.png'  %>
+          </div>
+        </div>
+
+  </div>
+
+  <div class="item">
+        
+        <div class="mockup-image small-12 columns">
+          <div class="small-12 medium-10 large-10 columns medium-centered">
+          <%= image_tag 'octavejournal_newsletter.png'  %>  
+          </div>
+        </div>
+
+  </div>
+
+</div><!-- project-carousel-->
+
+
+<div class="detail">
+  <div class="row">
+    <div class="small-12 columns detail-container">
+      <div class="small-12 medium-5 large-5 columns alpha">
+        <p class="detail-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, pariatur, quod doloribus repellat neque ullam placeat magni cum inventore nostrum dignissimos atque nesciunt perferendis? Veniam, odit, rem, nemo obcaecati autem a laudantium atque quis illum vitae minima eaque cupiditate explicabo qui optio libero tenetur debitis fugit suscipit modi. Ipsam, vitae?
+        </p>
+      </div>
+      <div class="small-12 medium-5 large-5 columns detail-tech alpha">
+        <% current_page.data.phases.each do |f| %>
+          <p class="detail-tech-phases"><%= f %></p>
+          <% end %>
+
+        <ul class="detail-tech-list tags clearfix">          
+          <% current_page.data.tech.each do |f| %>
+          <li class="tag"><%= f %></li>
+          <% end %>
+        </ul>
+        <% current_page.data.source.each do |f| %>
+          <a href="<%= f %>" class="small button secondary">View Source</a>
+        <% end %>
+        <% current_page.data.link.each do |f| %>
+          <a href="<%= f %>" class="small button secondary">View Project</a>
+        <% end %>
+        <p class="detail-notes">* note you will need credentials to access this site
+          <br> username: guest <br> password: guest</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  </div>
+  </div>

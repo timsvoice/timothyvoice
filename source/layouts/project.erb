@@ -12,11 +12,10 @@
     <%= javascript_include_tag "modernizr" %>
   </head>
   
-  <body class="<%= page_classes %> clearfix">
-    
-    <%= yield %>
-
+  <body class="<%= page_classes %>">
     <%= partial "navigation" %>
+
+    <%= yield %>
 
     <%= javascript_include_tag  "all", "app" %>
 

@@ -2,27 +2,27 @@
   font-weight: $heavy-text;
 }
 
-$indent: 6rem;
-
 .branding-title {
   margin-bottom: 0;
   font-family: $body-font;
-  font-size: $indent;
+  font-size: 6rem;
+  line-height: 6rem;
   font-weight: $heavy-text;
+  text-align: right;
   @media only screen and (max-width: 40em) { 
-    font-size: $indent / 2;
+    font-size: 6rem / 2;
   }
 }
 
 .indent {
-  padding-left: $indent * 1.25;
+  padding-left: 6rem * 1.25;
   @media only screen and (max-width: 40em) { 
-    padding-left: ($indent * 1.25) / 2;
+    padding-left: (6rem * 1.25) / 2;
   }
 }
 
 .branding-byline {
-  font-size: 2.55rem;
+  font-size: 2.5rem;
   font-weight: $light-text;
   @media only screen and (max-width: 40em) { 
     font-size: 1.41rem;
@@ -35,7 +35,7 @@ $indent: 6rem;
   padding-top: 0.75rem;
   ul, li:not(.has-form) a:not(.button), ul li > a {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: $heavy-text;
     &:hover {
       color: black;
@@ -91,4 +91,51 @@ $indent: 6rem;
     font-size: 4rem;
     text-align: center;
   }
+}
+
+// project
+
+.project-title {
+  @extend .branding-title;
+  text-align: left;
+  font-size: 4rem;
+  line-height: 4rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-intro {
+  font-weight: $light-text;
+  font-size: 1.125rem;
+}
+
+.detail-text {
+  font-family: $text-font;
+  font-weight: $light-text;
+  font-size: 1.1rem;
+}
+
+.tags > .tag {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  margin-right: 0.5rem;
+  text-decoration: underline;
+  a {
+    color: inherit;
+  }
+}
+
+.detail-tech-phases {
+  color: $dark-gray;
+  font-weight: $light-text;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.detail-notes {
+  @extend .detail-tech-phases;
+  font-size: 0.75rem;
 }

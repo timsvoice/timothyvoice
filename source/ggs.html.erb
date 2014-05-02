@@ -1,17 +1,93 @@
 ---
 layout: project
+
+tech: 
+  - HTML/Sass/jQuery
+  - Wordpress
+  - Foundation
+
+phases: 
+  - Concept
+  - Design
+  - Development
+  - Deployment
+
+source: 
+  - https://github.com/timsvoice/great_green_sources
+
+link:
+  - #
+
 ---
 
-<div class="row">
-  <div class="small-12 medium-12 large-12 columns project-intro">
-    
-    <h2 class="project-intro-title">
-      Great Green Sources
-    </h2>
-    
-    <p class="project-intro-teaser">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, officiis eius ratione quas a ducimus accusantium neque temporibus incidunt perferendis. Deserunt, mollitia, debitis incidunt ex quis consequatur repudiandae recusandae inventore at unde? Est, consequuntur, molestias fugiat fuga ab ea dolorum sunt iusto impedit blanditiis qui sint totam culpa nihil perferendis sapiente vitae asperiores ducimus esse mollitia voluptas consectetur expedita unde voluptate illo ipsa officiis? Odit, assumenda, nostrum, numquam voluptatum recusandae voluptatem deserunt harum reprehenderit id corrupti consectetur consequatur rerum ratione architecto dicta magni ipsa officiis dolor iusto praesentium quo ut ducimus voluptates earum magnam. Dicta ipsum cupiditate nam rem ex?
-    </p>
-
+<div class="branding-band">
+  <div class="row">
+    <div id="splash" class="small-12 medium-12 large-12 columns project ggs">
+      <div class="fixer">
+        <div class="small-12 medium-6 large-4 columns alpha project-description">
+          <h1 class="project-title">
+          Great <br> Green <br> Sources
+        </h1>
+        <p class="project-intro">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, natus libero sint aliquam officiis quis illo itaque fugiat harum voluptas optio ullam consectetur atque voluptatum laborum ratione mollitia accusantium consequatur doloribus praesentium? Assumenda eaque suscipit perferendis pariatur nemo rem quidem nulla veritatis blanditiis. Blanditiis aspernatur distinctio reiciendis. Sit, error vel.
+        </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+  
+<div class="mockup">
+    <div class="row">
+      <div class="mockup-image small-12 columns">
+        <div class="small-12 medium-10 large-10 columns medium-centered">
+        <%= image_tag 'greatgreensources_full_mockup.png'  %> 
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <!-- <div class="detail">
+    <div class="row">
+      <div class="small-12 columns detail-container">
+        <div class="small-12 medium-5 large-5 columns detail-text">
+        <%= image_tag 'greatgreensources_fullpage_old.png'  %>           
+        </div>
+        <div class="small-12 medium-5 large-5 columns detail-text">
+        <%= image_tag 'greatgreensources_fullpage.png'  %>           
+        </div>
+      </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="detail">
+    <div class="row">
+      <div class="small-12 columns detail-container">
+        <div class="small-12 medium-5 large-5 columns alpha">
+          <p class="detail-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, pariatur, quod doloribus repellat neque ullam placeat magni cum inventore nostrum dignissimos atque nesciunt perferendis? Veniam, odit, rem, nemo obcaecati autem a laudantium atque quis illum vitae minima eaque cupiditate explicabo qui optio libero tenetur debitis fugit suscipit modi. Ipsam, vitae?
+          </p>
+        </div>
+        <div class="small-12 medium-5 large-5 columns detail-tech alpha">
+        <% current_page.data.phases.each do |f| %>
+          <p class="detail-tech-phases"><%= f %></p>
+          <% end %>
+
+        <ul class="detail-tech-list tags clearfix">          
+          <% current_page.data.tech.each do |f| %>
+          <li class="tag"><%= f %></li>
+          <% end %>
+        </ul>
+        <% current_page.data.source.each do |f| %>
+          <a href="<%= f %>" class="small button secondary">View Source</a>
+        <% end %>
+        <% current_page.data.link.each do |f| %>
+          <div class="small button secondary inactive">Under Construction</div>
+        <% end %>
+        
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>

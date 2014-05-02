@@ -8,6 +8,9 @@
 @import "foundation";
 @import "normalize";
 @import "ionicons";
+@import "vendor/owl.carousel";
+@import "vendor/owl.theme";
+@import "vendor/owl.carousel";
 
 //modules
 
@@ -25,6 +28,7 @@
 @import "partials/login";
 @import "partials/buttons";
 @import "partials/images";
+@import "partials/project";
  
 
 // Or selectively include components

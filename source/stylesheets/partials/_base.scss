@@ -18,6 +18,10 @@ hr {
 	margin: 0;
 }
 
+ul {
+  margin-left: 0;
+}
+
 :focus {
 	background:white;
 }
@@ -43,7 +47,7 @@ hr {
   padding-top: 3rem;
 }
 
-#mask {
+#mask, #projectmask {
     position:absolute; 
     top:0; 
     left:0; 
@@ -61,6 +65,10 @@ hr {
   @extend #splash;
   width: 100%;
 }
+
+// .ggs-band, #splash.ggs {
+//   background: $ggs-color;
+// }
 
 .projects-ggs-band {
   // background: darken($ggs-color, 10%);

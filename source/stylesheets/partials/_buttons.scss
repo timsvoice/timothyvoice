@@ -14,3 +14,13 @@
     @include transition(200, all);
   }
 }
+
+.button.secondary.inactive {
+  @extend .button.secondary;
+  &:hover {
+    background-color: inherit;
+    @include border-light($dark-gray);
+    color: $dark-gray;
+    cursor: default;
+  }
+}

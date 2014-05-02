@@ -13,3 +13,10 @@
 @mixin transition($timing: 200, $elements: all) {
   transition: $elements $timing ease $timing;   
 }
+
+@mixin project-frame($color: $black) {
+  border-top: 0rem $color solid;
+  border-right: 0.0625rem $color solid;
+  border-bottom: 0.0625rem $color solid;
+  border-left: 0.0625rem $color solid;
+}

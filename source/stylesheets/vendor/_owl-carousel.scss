@@ -1,0 +1,92 @@
+#project-carousel .item{
+  margin:0rem;
+  display: inline-block;
+  float: left;
+}
+#project-carousel .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-contents-carousel {
+    .item {
+      position: relative;
+      width: 100%;
+    } 
+  }
+
+.project-contents-carousel-item-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: $white;
+    padding: 0.625rem;
+    padding-top: 0rem;
+    -webkit-transition: all 300ms ease-out;  
+      -moz-transition: all 300ms ease-out;  
+      -o-transition: all 300ms ease-out;  
+      -ms-transition: all 300ms ease-out;  
+      transition: all 300ms ease-out;
+      height: 160px;   
+      display: block;  
+      bottom: -110px;  
+      @media only screen and (max-width: 40.063em) { 
+        bottom: -120px;
+      }
+      &:hover {
+        -moz-transform: translateY(-53.333%);  
+        -o-transform: translateY(-53.333%);  
+        -webkit-transform: translateY(-53.333%);  
+        transform: translateY(-53.333%); 
+      }
+} 
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  i {
+    font-size: 2rem;
+  }
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+  color: $white;
+  padding: 2px 10px;
+  i {
+    font-size: 3rem;
+  }
+}
+
+.wrapper-with-margin{
+  margin:0px 50px;
+}
+
+ 
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+  color: $black;
+  background-color: inherit;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: 0.625rem;
+  top: 45%;
+  @media only screen and (max-width: 40.063em) { 
+    display: none;
+  } 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: 0.625rem;
+  top: 45%;
+  @media only screen and (max-width: 40.063em) { 
+    display: none;
+  }
+}
