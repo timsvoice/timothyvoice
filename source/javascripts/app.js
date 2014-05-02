@@ -11,16 +11,16 @@ function resizesplash() {
       resizesplash();
 };
 
-//about
-function resizeabout() {
-      var heights = window.innerHeight;
-      document.getElementById("about").style.minHeight = heights + "px";
-  }
+// //about
+// function resizeabout() {
+//       var heights = window.innerHeight;
+//       document.getElementById("about").style.minHeight = heights + "px";
+//   }
 
-  resizeabout();
-  window.onresize = function() {
-      resizeabout();
-};
+//   resizeabout();
+//   window.onresize = function() {
+//       resizeabout();
+// };
 
 $(window).load(function () {
     $('#mask').add('#projectmask').fadeOut('3000');

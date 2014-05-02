@@ -3,6 +3,7 @@
 
 //= require stickem/jquery.stickem.js
 //= require headroom
+//= require about
 //= require owlcarousel/owl-carousel/owl.carousel.js
 //= require app
 //= require script
