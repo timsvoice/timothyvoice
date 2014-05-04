@@ -25,37 +25,39 @@ images:
 
 <div class="branding-band">
   <div class="row">
-    <div id="splash" class="small-12 medium-12 large-12 columns project ggs">
-      <div class="fixer">
+   
+      <div class="small-12 medium-12 large-12 columns project ggs">
+         
         <div class="small-12 medium-6 large-4 columns alpha project-description">
           <h1 class="project-title">
           Great <br> Green <br> Sources
         </h1>
         <p class="project-intro">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, natus libero sint aliquam officiis quis illo itaque fugiat harum voluptas optio ullam consectetur atque voluptatum laborum ratione mollitia accusantium consequatur doloribus praesentium? Assumenda eaque suscipit perferendis pariatur nemo rem quidem nulla veritatis blanditiis. Blanditiis aspernatur distinctio reiciendis. Sit, error vel.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, debitis odio non obcaecati officiis enim beatae aliquam magnam vel consequatur!
         </p>
         </div><!-- project-description -->
-      </div><!-- fixer -->
-    </div><!-- splash -->
+    </div><!-- project -->
+    
   </div><!-- row -->
 </div><!-- branding-band -->
 
-<div class="row">
-  <div id="project-carousel" class="owl-carousel mockup">      
- 
-    <% current_page.data.images.each do |f| %>
-    <div class="item">
-      <div class="mockup-image small-12 columns">
-        <div class="small-12 medium-10 large-10 columns medium-centered">
-          <%= image_tag f  %>
-        </div>
-      </div><!-- mockup-image -->
-    </div><!-- item -->
-    <% end %>
+<div class="project-slider clearfix">
+  <div class="row">
+    <div id="project-carousel" class="owl-carousel mockup">      
+   
+      <% current_page.data.images.each do |f| %>
+      <div class="item">
+        <div class="mockup-image small-12 columns">
+          <div class="small-12 medium-10 large-10 columns medium-centered">
+            <%= image_tag f  %>
+          </div>
+        </div><!-- mockup-image -->
+      </div><!-- item -->
+      <% end %>
 
-  </div><!-- project-carousel-->
-</div><!-- row -->
-
+    </div><!-- project-carousel-->
+  </div><!-- row -->
+</div>
 
 <div class="detail">
   <div class="row">
