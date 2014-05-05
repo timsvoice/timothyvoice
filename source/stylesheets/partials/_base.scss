@@ -62,9 +62,15 @@ ul {
   background: $branding-color;
 }
 
-.branding-band {
+.branding-band, .connect-band {
   @extend #splash;
   width: 100%;
+}
+
+.connect-band {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  position: absolute;
 }
 
 // .ggs-band, #splash.ggs {
@@ -103,10 +109,7 @@ ul {
 
 }
 
-.contact-band {
-  padding-bottom: 3rem;
-  background: $gray;
-}
+
 
 .contact-container {
   height: 7rem;
