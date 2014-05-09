@@ -3,6 +3,7 @@
   left: 0;
   position: fixed;
   bottom: 0;
+  transition: bottom 0.1s ease-in-out;
   z-index: 99;
 }
 
@@ -20,6 +21,6 @@
   }
 }
 
-.nav-up {
-  top: -40px;
+.nav-down {
+  bottom: -4rem;
 }
