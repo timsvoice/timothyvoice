@@ -20,7 +20,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 350);
+        }, 250);
         return false;
       }
     }
@@ -61,7 +61,23 @@ $('.projects-container').stickem({
 
 $(document).ready(function() {
  
-  $("#project-carousel").owlCarousel({
+  $("#ggs-carousel").owlCarousel({
+    items : 1,
+    itemsDesktop : 1,
+    itemsDesktopSmall : 1,
+    itemsTablet : 1,
+    mouseDrag: true,
+    lazyLoad : true,
+    navigation : true,
+    pagination : false,
+    navigationText : [
+    '<i class="ion-ios7-arrow-left">',
+    '<i class="ion-ios7-arrow-right">'
+    ],
+    
+  });
+
+  $("#octave-carousel").owlCarousel({
     items : 1,
     itemsDesktop : 1,
     itemsDesktopSmall : 1,
