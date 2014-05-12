@@ -9,6 +9,11 @@
 .mockup-image, .detail-container {
   padding-top: 2rem;
   background: $white;
+  text-align: center;
+  img {
+    max-height: 450px;
+    text-align: center;
+  }
 }
 
 .project-single-image {
@@ -23,4 +28,8 @@
 
 .tags {
   margin-bottom: 1rem;
+}
+
+.small.expand.button {
+  margin-top: 2rem;
 }

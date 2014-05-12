@@ -31,19 +31,17 @@ $(window).load(function () {
     $('#mask').add('#projectmask').fadeOut('3000');
 });
 
-// $(window).load(function () {
-//     $('#projectmask').fadeOut('3000');
-// });
+//Stickem Projects Description
 
-$('.projects-container').stickem({
-   item: '.projects-summary',
-   container: '.projects-single-container',
-   stickClass: 'stickit',
-   endStickClass: 'stickit-end',
-   offset: 0,
-   onStick: null,
-   onUnstick: null
- });
+// $('.projects-container').stickem({
+//    item: '.projects-summary',
+//    container: '.projects-single-container',
+//    stickClass: 'stickit',
+//    endStickClass: 'stickit-end',
+//    offset: 0,
+//    onStick: null,
+//    onUnstick: null
+//  });
 
 
 // $(window).scroll(function() {
