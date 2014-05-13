@@ -5,30 +5,34 @@
 .branding-title {
   margin-bottom: 0;
   font-family: $body-font;
-  font-size: 3.75rem;
-  line-height: 3.75rem;
   font-weight: $heavy-text;
-  text-align: right;
+  text-align: left;
+  text-transform: uppercase;
   @include breakpoint(large) {
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: 5rem;
   }
   @include breakpoint(medium) {
-    font-size: 4.5rem;
-    line-height: 4.5rem;    
+    font-size: 6rem;
+    text-transform: capitalize;   
   }
   @include breakpoint(small) {
+    font-size: 2.5rem;
     text-align: left;
+    text-transform: capitalize;
   }
 }
 
 .branding-byline {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: $light-text;
-  text-align: right;
+  text-align: left;
+  padding-left: 0.125rem;
+  margin-bottom: 0;
+  @include breakpoint(large) {
+    font-size: 2.5rem;
+  }
   @include breakpoint(medium) {
-    font-size: 1.75rem;
-    text-align: right;    
+    font-size: 2.5rem;    
   }
   @include breakpoint(small) {
     font-weight: $medium-text;
@@ -40,19 +44,28 @@
 .branding-summary {
   font-family: $body-font;
   font-weight: $light-text;
-  font-size: 1.1rem;
-  text-align: right;
+  font-size: 1.25rem;
+  padding-left: 0.125rem;
   a {
     color: inherit;
     font-weight: $medium-text;
     text-decoration: underline;
   }
   @include breakpoint(large) {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
   @include breakpoint(small) {
     text-align: left;
-    font-size: 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+.contact {
+  i {
+    font-size: 2rem;
+    font-weight: $light-text;
+    color: $black;
+    margin-right: 2rem;
   }
 }
 
@@ -63,7 +76,7 @@
   ul, li:not(.has-form) a:not(.button), ul li > a {
     color: black;
     font-size: 1.25rem;
-    font-weight: $heavy-text;
+    font-weight: $light-text;
     &:hover {
       color: black;
   }

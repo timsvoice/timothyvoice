@@ -1,92 +1,95 @@
 ---
-title: Octave Journal
+layout: project
+
+tech: 
+  - HTML/Sass/jQuery
+  - Wordpress
+  - Foundation
+  - Ink 
+
+phases: 
+  - Concept
+  - Design
+  - Development
+  - Deployment
+  - Content
+
+source:
+  - https://github.com/timsvoice/living_octave_research
+
+link:
+  - http://www.octavejournal.com
+
+images:
+  - octavejournal_full_mockup.png
+  - octavejournal_newsletter.png
+
+
 ---
 
-<div class="projects-octavejournal-band clearfix">
-  <div class="projects-container octavejournal">
-    <div class="row projects-octavejournal">
-      <div class="projects-single">
-        <div class="projects-single-container clearfix">
-          <div class=" medium-7 large-5 columns projects-summary">
-            <h3 class="projects-single-title">
-              Octave Journal
-            </h3>
-            <div class="detail-tech alpha clearfix">
-              <ul class="detail-tech-phases">        
-                <li class="detail-tech-phases">
-                  <p class="projects-single-role">Role:</p>
-                </li> 
-                <li class="detail-tech-phases">concept</li>
-                <li class="detail-tech-phases">design</li>
-                <li class="detail-tech-phases">development</li>
-                <li class="detail-tech-phases">deployment</li>        
-                <li class="detail-tech-phases">content</li>          
-         
-              </ul>
-              <ul class="detail-tech-list tags clearfix">          
-                <li class="detail-tech-phases">
-                  <p class="projects-single-role">Tools:</p>
-                </li> 
-                <li class="tag">HTML/Sass/JS</li>
-                <li class="tag">Foundation</li>
-                <li class="tag">Wordpress</li>
-                <li class="tag">Ink</li>
-              </ul>                 
-            </div><!-- detail-tech -->
-            <div class="show-for-medium-up project-details">              
-              <p class="detail-text">
-                The Octave Journal is an internal publication, serving as a knowledge base for a geographically dispersed team. The Journal started out as an experimental project and is now edited and maintained by a core team based in Shanghai and New York. 
-              </p>
-              <p class="detail-text">
-                 The Octave Journal is published via bi-monthly, custom coded email campaign. We consistently drove up our readership numbers Using Mailchimp and Google Analytics data. 
-              </p>              
-              <a href="https://github.com/timsvoice/great_green_sources" class="small button secondary">View Source</a>
-              <a href="www.octavejournal.com" class="small button secondary">View Project</a>
-            </div><!-- project-details -->
-          </div><!-- projects-summary -->    
-          <div class="show-for-small-only project-small-image">
-            <div class="mockup-image">
-                <%= image_tag 'octavejournal_imac.png' %>
-            </div><!-- mockup-image -->
-          </div><!-- project-small-image -->
-          <div class="mockup-container small-12 medium-5 large-7 columns">                            
-            <div class="show-for-medium-only">
-                <div class="mockup-image">
-                  <div class="small-12 columns">
-                    <%= image_tag 'octavejournal_ipad.png' %>
-                  </div>
-                </div><!-- mockup-image -->
-            </div>              
-            <div id="octavejournal-carousel" class="show-for-large-up owl-carousel mockup">         
-              <div class="item">
-                <div class="mockup-image">
-                  <div class="small-12 columns">
-                    <%= image_tag 'octavejournal_imac.png' %>
-                  </div>
-                </div><!-- mockup-image -->
-              </div><!-- item -->            
-              <div class="item">
-                <div class="mockup-image">
-                  <div class="small-12 columns">
-                    <%= image_tag 'octavejournal_ipad.png' %>
-                  </div>
-                </div><!-- mockup-image -->
-              </div><!-- item -->          
-              <div class="item">
-                <div class="mockup-image">
-                  <div class="small-12 columns">
-                    <%= image_tag 'octavejournal_iphone.png' %>
-                  </div>
-                </div><!-- mockup-image -->
-              </div><!-- item -->
-            </div><!-- project-carousel-->
-            <div class="show-for-small-only project-links-small">
-              <a href="www.octavejournal.com" class="small button secondary">View Project</a>
-            </div> 
-          </div><!-- mockup-container -->             
-        </div><!-- projects-single-container -->
-      </div><!-- projects-single -->
-    </div><!-- row projects-octavejournal -->
-  </div><!-- projects-container -->
-</div><!-- projects-octavejournal-band -->
+<div class="branding-band">
+  <div class="row">
+    <div id="" class="small-12 medium-12 large-12 columns project ggs">
+        <div class="small-12 medium-6 large-4 columns alpha project-description">
+          <h1 class="project-title">
+          Octave <br> Journal
+        </h1>
+        <p class="project-intro">
+          How do you create a common organizational language for dispersed team of designers, development officers, hospitality managers and corporate leaders? 
+        </p>
+        </div><!-- project-description -->
+    </div><!-- splash -->
+  </div><!-- row -->
+</div><!-- branding-band -->
+
+<div class="row">
+  <div id="project-carousel" class="owl-carousel mockup">      
+ 
+    <% current_page.data.images.each do |f| %>
+    <div class="item">
+      <div class="mockup-image small-12 columns">
+        <div class="small-12 medium-10 large-10 columns medium-centered">
+          <%= image_tag f  %>
+        </div>
+      </div><!-- mockup-image -->
+    </div><!-- item -->
+    <% end %>
+
+  </div><!-- project-carousel-->
+</div><!-- row -->
+
+
+<div class="detail">
+  <div class="row">
+    <div class="small-12 columns detail-container">
+      <div class="small-12 medium-5 large-5 columns alpha">
+        <p class="detail-text">
+          The Octave Journal serves as a core knowledge base for a geographically dispersed team. The Journal is organized around issues and Contributions are sourced from around the organization and edited by a core team based in Shanghai and New York. 
+        </p>
+        <p class="detail-text">
+          Key to the success of the project was to have a robust, private platform to support a periodic email publication designed to drive readers to the site. We consistently drove up our readership numbers with adjustments to design and userflows based on Mailchimp and Google Analytics data.
+        </p>
+      </div>
+      <div class="small-12 medium-5 large-5 columns detail-tech alpha clearfix">
+        <% current_page.data.phases.each do |f| %>          
+          <p class="detail-tech-phases"><%= f %></p>
+        <% end %>
+
+        <ul class="detail-tech-list tags clearfix">          
+          <% current_page.data.tech.each do |f| %>
+          <li class="tag"><%= f %></li>
+          <% end %>
+        </ul>
+        <% current_page.data.source.each do |f| %>
+          <a href="<%= f %>" class="small button secondary">View Source</a>
+        <% end %>
+        <% current_page.data.link.each do |f| %>
+          <a href="<%= f %>" class="small button secondary">View Project</a>
+        <% end %>
+        <p class="detail-notes">* note you will need credentials to access this site
+          <br> username: guest <br> password: guest</p>
+      </div>
+    </div><!-- detail-container -->
+  </div><!-- row -->
+</div><!-- detail -->
 
