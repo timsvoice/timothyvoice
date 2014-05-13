@@ -24,3 +24,12 @@
     cursor: default;
   }
 }
+
+.connect-links {
+  i {
+    &:hover {
+      color: $white;
+      @include transition(200ms, color);
+    }
+  }
+}

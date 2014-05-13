@@ -45,7 +45,6 @@ ul {
 
 .projects-container, .about {
   background: #fff;
-  padding-top: 3rem;
 }
 
 #mask, #projectmask {
@@ -84,7 +83,6 @@ ul {
 
 .projects-container .ggs{
   @extend .projects-ggs-band;
-  padding-top: 2rem;
 }
 
 .projects-octavejournal-band {
@@ -94,7 +92,6 @@ ul {
 
 .projects-container .octavejournal{
   @extend .projects-octavejournal-band;
-  padding-top: 2rem;
 }
 
 .about-band, .about {
@@ -102,7 +99,6 @@ ul {
 }
 
 .about-band {
-  padding-bottom: 3rem;
 }
 
 .about-tool-list {

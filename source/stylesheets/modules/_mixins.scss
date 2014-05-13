@@ -40,8 +40,8 @@
   border: $width $color solid;;
 }
 
-@mixin transition($timing: 200, $elements: all) {
-  transition: $elements $timing ease $timing;   
+@mixin transition($timing: 200ms, $elements: all) {
+  transition: $elements $timing ease;   
 }
 
 @mixin project-frame($color: $black) {
