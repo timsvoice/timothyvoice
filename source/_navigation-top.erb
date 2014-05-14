@@ -1,34 +1,22 @@
 <div class="fixed">
-  <nav class="top-bar" data-topbar>
+  <nav class="top-bar top playbook" data-topbar>
     <ul class="title-area">
       <li class="name">
-        <h1><a href="#"></a></h1>
+        <h1><a href="#">Timothy Voice</a></h1>
       </li>
       <li class="toggle-topbar menu-icon"><a href="#"></a></li>
-    </ul>
-  
+    </ul>  
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
-    <li><a href="#">projects</a></li>
-    <li><a href="#">about</a></li>
-    <li class="divider"></li>
-    <li><a href="#">playbook</a></li>
-  </ul>
-  
-      <!-- Left Nav Section -->
-      <ul class="left">
-        <li><a href="#">
-          <i class="ion-social-github"></i>      
-        </a></li>
-        <li><a href="#">
-          <i class="ion-social-twitter"></i>
-        </a></li>
-        <li><a href="#">
-          <i class="ion-ios7-email"></i>
-        </a></li>
-      
-      </ul>
-    </section>
+        <li><%= link_to 'about', '/' %></li>
+        <li>
+          <%= link_to 'projects', '/', anchor: "projects" %>
+        </li>
+        <li>
+          <%= link_to 'connect', '/', anchor: "connect" %>
+        </li>
+      </ul>  
+    </section><!-- top-bar-section -->
   </nav>
-</div><!-- bottom-fixed -->
+</div><!-- fixed -->

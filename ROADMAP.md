@@ -2,7 +2,12 @@
 
 ##Purpose
 
-A roadmap for me to follow when building a new product
+A roadmap for me to follow when building starting a new project
+Must contain useful information, intended for me as a personal playbook
+
+Code heavy (gist)
+I am the intended audience
+
 
 project setup
 sketches (how are they useful)
@@ -24,5 +29,3 @@ PUSH VERSION
 Populate content - populate with all available content
 PUSH VERSION
 Refine model - missing content?
-
-

@@ -79,8 +79,47 @@
     font-weight: $light-text;
     &:hover {
       color: black;
+    }
   }
+}
+
+.playbook .top-bar-section {
+  @extend .top-bar-section;
+  ul, li:not(.has-form) a:not(.button), ul li > a {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: $light-text;
+    &:hover {
+      color: black;
+    }
   }
+}
+
+.top-bar .name h1 a {
+  color: $black;
+  font-weight: $heavy-text;
+  font-family: $body-font;
+}
+
+.side-nav {
+  li > a:first-child:not(.button) {
+    color: $black;
+    font-weight: $light-text;
+    font-size: 1.1rem;
+    font-family: $text-font;
+  }
+  li.active > a:first-child:not(.button) {
+    color: $branding-color;
+  } 
+  .heading {
+    font-size: 1.125rem;
+  }
+} 
+
+.side-nav {
+  a {
+    color: $black;
+  }  
 }
 
 // projects
