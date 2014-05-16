@@ -8,6 +8,8 @@ gem "middleman"
 gem "rack-contrib"
 gem "puma"
 
+gem "middleman-deploy"
+
 # Live-reloading plugin
 gem "middleman-livereload"
 
