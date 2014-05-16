@@ -113,7 +113,7 @@ end
 activate :deploy do |deploy|
   deploy.method = :rsync
   deploy.host   = "www.timothyvoice.com"
-  deploy.path   = "/var/www/"
+  deploy.path   = "/var/www/timothyvoice.com/public_html"
   # Optional Settings
   deploy.user  = "root" # no default
   # deploy.port  = 5309 # ssh port, default: 22

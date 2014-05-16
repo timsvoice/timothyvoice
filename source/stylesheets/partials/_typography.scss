@@ -9,25 +9,28 @@
   text-align: left;
   text-transform: uppercase;
   font-size: 6rem;
+  line-height: 6rem;
+  color: darken($branding-color, 37.5%);
   @include breakpoint(large) {
     font-size: 6rem;
   }
   @include breakpoint(medium) {
-    text-transform: capitalize;   
+    // text-transform: capitalize;   
   }
   @include breakpoint(small) {
     font-size: 2.5rem;
     text-align: left;
-    text-transform: capitalize;
+    // text-transform: capitalize;
   }
 }
 
 .branding-byline {
   font-size: 2.5rem;
-  font-weight: $light-text;
+  font-weight: $medium-text;
   text-align: left;
   padding-left: 0.125rem;
   margin-bottom: 0;
+  color: darken($branding-color, 35%);
   @include breakpoint(large) {
     font-size: 2.5rem;
   }
@@ -46,6 +49,7 @@
   font-weight: $light-text;
   font-size: 1.25rem;
   padding-left: 0.125rem;
+  color: darken($branding-color, 40%);
   a {
     color: inherit;
     font-weight: $medium-text;
@@ -74,9 +78,9 @@
 .top-bar-section {
   padding-top: 0.75rem;
   ul, li:not(.has-form) a:not(.button), ul li > a {
-    color: black;
+    color: darken($branding-color, 40%);
     font-size: 1.25rem;
-    font-weight: $light-text;
+    font-weight: $medium-text;
     &:hover {
       color: black;
     }
