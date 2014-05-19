@@ -1,17 +1,5 @@
 $(document).foundation();
 
-// //about
-// function resizeabout() {
-//       var heights = window.innerHeight;
-//       document.getElementById("about").style.minHeight = heights + "px";
-//   }
-
-//   resizeabout();
-//   window.onresize = function() {
-//       resizeabout();
-// };
-// 
-
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -30,32 +18,6 @@ $(function() {
 $(window).load(function () {
     $('#mask').add('#projectmask').fadeOut('3000');
 });
-
-//Stickem Projects Description
-
-// $('.projects-container').stickem({
-//    item: '.projects-summary',
-//    container: '.projects-single-container',
-//    stickClass: 'stickit',
-//    endStickClass: 'stickit-end',
-//    offset: 0,
-//    onStick: null,
-//    onUnstick: null
-//  });
-
-
-// $(window).scroll(function() {
-
-//     if ($(this).scrollTop()>0)
-//      {
-//         $('.top-bar').fadeOut();
-//      }
-//     else
-//      {
-//       $('.top-bar').fadeIn();
-//      }
-//  });
-
 
 $(document).ready(function() {
  
@@ -90,6 +52,13 @@ $(document).ready(function() {
     ],
     
   });
+
+  $('#projects').waypoint(function() {
+   $( ".source-link" ).addClass( "animated fadeInRight" );
+   $( ".source-link" ).removeClass( "hidden" );
+  });
  
 });
+
+
 

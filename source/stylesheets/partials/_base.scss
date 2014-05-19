@@ -65,15 +65,31 @@ ul {
   background: $branding-color;
 }
 
-.branding-band, .connect-band {
-  @extend #splash;
+.branding-band {
+  background: $branding-color;
+  width: 100%;
+}
+
+.projects-band {
+  background: darken($branding-color, 37.5%);
+  width: 100%;
+}
+
+.process-band {
+  background: $branding-color;
   width: 100%;
 }
 
 .connect-band {
   padding-top: 2rem;
   padding-bottom: 6rem;
-  position: absolute;
+  background: $branding-color;
+  .connect-text {
+    color: darken($branding-color, 37.5%);
+    a {
+      color: darken($branding-color, 47.5%);
+    }
+  }
 }
 
 // .ggs-band, #splash.ggs {
