@@ -54,8 +54,8 @@ $(document).ready(function() {
   });
 
   $('#projects').waypoint(function() {
-   $( ".source-link" ).addClass( "animated fadeInRight" );
-   $( ".source-link" ).removeClass( "hidden" );
+   $( ".project-links" ).addClass( "animated fadeInRight" );
+   $( ".project-links" ).removeClass( "hidden" );
   });
  
 });

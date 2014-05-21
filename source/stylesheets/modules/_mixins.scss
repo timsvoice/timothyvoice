@@ -24,6 +24,14 @@
   Typography
 ============================ */
 
+@mixin list($margin-right: 1rem, $display: inline-block) {
+  list-style: none;
+  li {
+    display: $display;
+    margin-right: $margin-right;
+  }
+}
+
 @mixin medium-text() {
   font-size: 0.85rem;
 }
@@ -32,7 +40,7 @@
   border-bottom: $thickness $color $style; 
 }
 
-@mixin fadeRight($duration: 1s, $distance: 50px) {
+@mixin fadeRight($duration: 0.25s, $distance: 25px) {
   .animated { 
     -webkit-animation-duration: $duration; 
     animation-duration: $duration; 

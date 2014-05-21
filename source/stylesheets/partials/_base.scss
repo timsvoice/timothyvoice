@@ -71,7 +71,7 @@ ul {
 }
 
 .projects-band {
-  background: darken($branding-color, 37.5%);
+  background: $branding-darker;
   width: 100%;
 }
 
@@ -81,15 +81,10 @@ ul {
 }
 
 .connect-band {
-  padding-top: 2rem;
-  padding-bottom: 6rem;
   background: $branding-color;
+  padding-bottom: 4rem;
   .connect-text {
-    color: darken($branding-color, 37.5%);
-    a {
-      color: darken($branding-color, 47.5%);
-    }
-  }
+  } 
 }
 
 // .ggs-band, #splash.ggs {

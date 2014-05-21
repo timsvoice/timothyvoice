@@ -1,0 +1,239 @@
+/* =================
+  Variables
+==================*/
+
+$kickstarter-font: 'Helvetica', Arial, FreeSans, sans-serif;
+$heavy-text:900;
+$medium-text:400;
+$light-text:200;
+
+$branding: hsla(144, 73, 52%, 1);
+$branding-transparent: hsla(144, 73, 52%, 0.3);
+$secondary: hsla(204, 2, 52%, 1);
+$active-secondary: hsla(230, 79, 15%, 1);
+$active-turtiary: hsla(99, 74, 7, 1);
+$background: hsla(180, 23, 97%, 1);
+$bio-background: hsla(203, 100, 95%, 1);
+
+$border-color: hsla(240, 7, 86%, 1);
+
+/* =================
+  Structure
+==================*/
+
+body.kickstarter {
+  background-color: $background;
+}
+
+.divider {
+  height: 1px;
+  background-color: $border-color;
+}
+
+.position-title-container {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.position-details-list {
+  @include list();
+  margin-bottom: 1rem;
+  li {
+    margin-right: 1rem;    
+  }
+}
+
+.frontend-list, .backend-list, .pipeline-list, .application-details-list {
+  @include list($margin-right: 0.1rem);
+  margin-bottom: 0rem;
+}
+
+.frontend-list, .backend-list, .pipeline-list {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: $light-text;
+}
+
+.position-tags-list {
+  float: right;
+  @extend .position-details-list;
+}
+
+.application-container {
+  background-color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px $border-color solid;
+}
+
+.application-resume-profile {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: darken($background, 0%);
+}
+
+.application-skills {
+}
+
+.application-details-list {
+  li {
+    display: block;
+    vertical-align: text-bottom;
+  }
+}
+
+/* =================
+  Typography
+==================*/
+
+i {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+a {
+  color: $branding;
+  &:hover {
+    color: darken($branding, 15%);
+  }
+}
+
+.position-title {
+  font-size: 2.5rem;
+  font-weight: $heavy-text;
+  text-align: center;
+}
+
+.position-name {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+body.kickstarter {
+  font-family: $kickstarter-font !important;
+  h1, h2, h3, h4, h5, p, a {
+    font-family: $kickstarter-font !important;
+  }
+}
+
+.application-skills-title {
+  font-weight: $heavy-text;
+  font-size: 2.25rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.position-details-list-item {
+  font-weight: $heavy-text;
+  font-size: 0.9rem;
+  color: $secondary;
+  i {
+      font-size: 1.25rem;
+      color: $secondary;
+    }
+}
+
+.application-list-item {
+  font-weight: $light-text;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  i {
+    font-size: 1.25rem;
+    color: $secondary;
+    margin-right: 1rem;
+  }
+}
+
+.application-detail-item {
+  @extend .application-list-item;
+  font-size: 1rem;
+  font-weight: $light-text;
+  a {
+      color: $branding;
+    }
+
+}
+
+.application-skills-backend {
+  margin-bottom: 2rem;
+}
+
+.application-skills-text {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: $light-text;
+  margin-top: 2rem;
+}
+
+.application-connect {
+  margin-top: 1rem;
+}
+
+.position-tags-list-item {
+  @extend .position-details-list-item;
+}
+
+.application-intro-opener {
+  margin-top: 2rem;
+  font-weight: $heavy-text;
+  font-size: 1.5rem;
+}
+
+.application-header {
+  font-weight: $heavy-text;
+}
+
+.application-experience-item {
+  background: $background;
+  padding: 0.5rem;
+}
+
+.experience-header {
+  font-weight: $heavy-text;
+  font-size: 1rem;
+}
+
+.experience-subheader {
+  @extend .experience-header;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.experience-body {
+  font-weight: $light-text;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-duration {
+  font-style: italic;
+  color: $secondary;
+  font-weight: $light-text;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.experience-education-header {
+  font-size: 2rem;
+}
+
+.experience-education-location {
+  @extend .experience-duration;
+}
+
+
+/* =================
+  UI
+==================*/
+
+.button.contact {
+  background-color: $branding;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-weight: $heavy-text;
+  &:hover {
+    background-color: darken($branding, 15%) ;
+  }
+}
