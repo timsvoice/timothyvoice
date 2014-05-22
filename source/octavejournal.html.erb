@@ -21,65 +21,51 @@ link:
   - http://www.octavejournal.com
 
 images:
-  - octavejournal_full_mockup.png
+  - octavejournal_mac_mockup.png
   - octavejournal_newsletter.png
-
+  - octavejournal_mobile.png
 
 ---
 
 <div class="branding-band">
   <div class="row">
-    <div id="" class="small-12 medium-12 large-12 columns project ggs">
-        <div class="small-12 medium-6 large-4 columns alpha project-description">
+    <div class="project ggs">
+        <div class="small-12 medium-6 large-4 columns project-description">
           <h1 class="project-title">
           Octave <br> Journal
         </h1>
-        <p class="project-intro">
-          How do you create a common organizational language for dispersed team of designers, development officers, hospitality managers and corporate leaders? 
-        </p>
         </div><!-- project-description -->
     </div><!-- splash -->
   </div><!-- row -->
 </div><!-- branding-band -->
 
 <div class="row">
-  <div id="project-carousel" class="owl-carousel mockup">      
- 
-    <% current_page.data.images.each do |f| %>
-    <div class="item">
-      <div class="mockup-image small-12 columns">
-        <div class="small-12 medium-10 large-10 columns medium-centered">
-          <%= image_tag f  %>
-        </div>
-      </div><!-- mockup-image -->
-    </div><!-- item -->
-    <% end %>
 
-  </div><!-- project-carousel-->
-</div><!-- row -->
-
-
-<div class="detail">
-  <div class="row">
-    <div class="small-12 columns detail-container">
-      <div class="small-12 medium-5 large-5 columns alpha">
-        <p class="detail-text">
-          The Octave Journal serves as a core knowledge base for a geographically dispersed team. The Journal is organized around issues and Contributions are sourced from around the organization and edited by a core team based in Shanghai and New York. 
-        </p>
-        <p class="detail-text">
-          Key to the success of the project was to have a robust, private platform to support a periodic email publication designed to drive readers to the site. We consistently drove up our readership numbers with adjustments to design and userflows based on Mailchimp and Google Analytics data.
-        </p>
-      </div>
-      <div class="small-12 medium-5 large-5 columns detail-tech alpha clearfix">
+  <div class="small-12 medium-4 medium-push-8 large-4 columns detail clearfix">
+    <div class=" detail-container">      
+        
+        <div class="clearfix">
+        <h2 class="detail-title">
+          Role
+        </h2>
+        <ul class="detail-tech-list clearfix">
         <% current_page.data.phases.each do |f| %>          
-          <p class="detail-tech-phases"><%= f %></p>
+          <li class="detail-tech-list"><%= f %></li>
         <% end %>
-
-        <ul class="detail-tech-list tags clearfix">          
+      </ul><!-- detail-tech-list -->
+        <h2 class="detail-title">
+          Tools
+        </h2>
+        <ul class="detail-tech-list clearfix">          
           <% current_page.data.tech.each do |f| %>
-          <li class="tag"><%= f %></li>
+          <li class="detail-tech-list"><%= f %></li>
           <% end %>
-        </ul>
+        </ul>        
+      </div><!-- clearfix -->
+
+        <p class="detail-text">
+          The Octave Journal is an online platform for gathering knowledge and updates from a geographically dispersed team. The Journal is organized around issues and is distributed through a bi-monthly email newsletter. It started as an internal experiment and is now edited by a core team based in Shanghai and New York. 
+        </p>        
         <% current_page.data.source.each do |f| %>
           <a href="<%= f %>" class="small button secondary">View Source</a>
         <% end %>
@@ -87,9 +73,24 @@ images:
           <a href="<%= f %>" class="small button secondary">View Project</a>
         <% end %>
         <p class="detail-notes">* note you will need credentials to access this site
-          <br> username: guest <br> password: guest</p>
-      </div>
+          <br> username: guest | password: guest</p>
+        <p class="detail-text">
+          The email campaign is designed to drive team members to the site where they can access articles, project updates, interviews of other team members and internal culture articles. I used data from our Mailchimp campaign to inform the design between issues, resulting in a design that focused on clear calls to action and brevity. In our last campaign, we doubled our opens and got the vast majority of recipients to click through to the main site.  
+        </p>
     </div><!-- detail-container -->
-  </div><!-- row -->
-</div><!-- detail -->
+  </div><!-- detail -->
+
+  <div class="carousel small-12 medium-8 medium-pull-4 large-8 columns">
+      <div class=" mockup">      
+    <% current_page.data.images.each do |f| %>
+    <div class="item">
+      <div class="mockup-image">
+          <%= image_tag f  %>
+      </div><!-- mockup-image -->
+    </div><!-- item -->
+    <% end %>
+  </div><!-- project-carousel-->
+  </div><!-- carousel -->
+
+</div><!-- row -->
 

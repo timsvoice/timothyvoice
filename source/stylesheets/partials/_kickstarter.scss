@@ -8,6 +8,7 @@ $medium-text:400;
 $light-text:200;
 
 $branding: hsla(144, 73, 52%, 1);
+$branding-dark: darken($branding, 15%);
 $branding-transparent: hsla(144, 73, 52%, 0.3);
 $secondary: hsla(204, 2, 52%, 1);
 $active-secondary: hsla(230, 79, 15%, 1);
@@ -149,8 +150,11 @@ body.kickstarter {
   font-size: 1rem;
   font-weight: $light-text;
   a {
-      color: $branding;
+      color: $branding-dark;
     }
+  i {
+      color: $branding-dark;
+  }
 
 }
 
@@ -175,7 +179,8 @@ body.kickstarter {
 
 .application-intro-opener {
   margin-top: 2rem;
-  font-weight: $heavy-text;
+  margin-bottom: 1rem;
+  font-weight: $medium-text;
   font-size: 1.5rem;
 }
 

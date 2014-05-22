@@ -222,7 +222,7 @@ i {
 }
 
 ul.detail-tech-phases {
-  margin-bottom: 0;  
+  margin-bottom: 1rem;  
   li {
     margin-bottom: 0;
     font-weight: $light-text;
@@ -324,10 +324,11 @@ ul.detail-tech-phases {
 .project-title {
   @extend .branding-title;
   text-align: left;
-  font-size: 4rem;
-  line-height: 4rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  @include breakpoint(small) {
+    line-height: 2.5rem;
+  }
 }
 
 .project-intro {
@@ -335,13 +336,23 @@ ul.detail-tech-phases {
   font-size: 1.125rem;
 }
 
+.detail-title {
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  color: lighten($branding-color, 10%);
+  font-weight: $heavy-text;
+  font-size: 2.5rem;
+}
+
 .detail-text {
+  margin-top: 1rem;
   font-family: $text-font;
   font-weight: $light-text;
 }
 
 .tags > .tag {
   @extend .detail-text;
+  margin-top: 0;
   list-style: none;
   display: inline-block;
   float: left;
@@ -354,6 +365,7 @@ ul.detail-tech-phases {
 }
 
 .detail-tech-phases {
+  @extend .tags;
   color: $dark-gray;
   font-weight: $light-text;
   margin-bottom: 0.5rem;
@@ -364,5 +376,6 @@ ul.detail-tech-phases {
 
 .detail-notes {
   @extend .detail-tech-phases;
+  width: 100%;
   font-size: 0.75rem;
 }

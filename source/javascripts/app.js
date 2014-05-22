@@ -21,7 +21,7 @@ $(window).load(function () {
 
 $(document).ready(function() {
  
-  $("#ggs-carousel").owlCarousel({
+  $("#project-carousel").owlCarousel({
     items : 1,
     itemsDesktop : 1,
     itemsDesktopSmall : 1,

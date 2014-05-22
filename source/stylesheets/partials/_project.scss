@@ -1,5 +1,4 @@
 .project-title {
-  border-bottom: $border-thick;
 }
 
 .mockup, .detail {
@@ -18,11 +17,13 @@
 .mockup-image, .detail-container {
   padding-top: 2rem;
   background: $white;
-  text-align: center;
   img {
-    max-height: 450px;
     text-align: center;
   }
+}
+
+.mockup-image {
+  margin-bottom: 4rem;
 }
 
 .project-single-image {
@@ -31,8 +32,8 @@
   padding-right: 0;
 }
 
-.detail {
-  margin-bottom: 5rem;
+.carousel {
+  margin-bottom: 6rem;
 }
 
 .tags {
