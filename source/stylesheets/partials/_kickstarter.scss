@@ -56,7 +56,7 @@ body.kickstarter {
 }
 
 .position-tags-list {
-  float: right;
+  text-align: center;
   @extend .position-details-list;
 }
 
@@ -65,6 +65,7 @@ body.kickstarter {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border: 1px $border-color solid;
+  border-top: none;
 }
 
 .application-resume-profile {
@@ -90,6 +91,7 @@ body.kickstarter {
 i {
   margin-left: 0rem;
   margin-right: 0rem;
+  vertical-align: middle;
 }
 
 a {
@@ -186,6 +188,11 @@ body.kickstarter {
 
 .application-header {
   font-weight: $heavy-text;
+  color: $secondary;
+  font-size: 2.5rem;
+  border-bottom: 0.5rem $branding solid;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .application-experience-item {
@@ -240,5 +247,35 @@ body.kickstarter {
   font-weight: $heavy-text;
   &:hover {
     background-color: darken($branding, 15%) ;
+  }
+}
+
+.tabs {
+  @include list();
+  @extend .tabs;
+  @extend .position-details-list-item;
+  border-bottom: 1px $border-color solid;
+  li {
+    @extend dd;
+    border: 1px $border-color solid;
+    border-bottom: none;
+    top: 1px;
+    margin-right: 0;
+  }
+  li.ui-state-active {
+    @extend dd;
+    border-bottom: 1px solid white;
+    position: relative;
+    top: 1px;
+    a {
+      background: $white;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  li:last-child {
+    border-right: 1px $border-color solid;
+    border-left: none !important;
   }
 }

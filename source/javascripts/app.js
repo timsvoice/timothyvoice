@@ -57,6 +57,10 @@ $(document).ready(function() {
    $( ".project-links" ).addClass( "animated fadeInRight" );
    $( ".project-links" ).removeClass( "hidden" );
   });
+
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
  
 });
 
