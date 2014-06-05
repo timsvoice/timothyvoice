@@ -28,41 +28,52 @@ title: Timothy Voice
 
 <div id="projects" class="projects-band">
   <div class="row">
-    <h2 class="projects-title">
-      Projects
-    </h2>
-    <ul class="project-list">
-      <li class="project">
-        <%= link_to 'Personal Site', 'timothyvoice', :class => 'project-link', :class => 'project-link' %>
-        <div class="project-links hidden">
-          <a href="www.octavejournal.com" class="visit-link"> | visit </a>
-          <a class="source-link" href="https://github.com/timsvoice/timothyvoice">| view code</a>
-        </div>              
-      </li>
-      <li class="project">
-        <%= link_to 'Great Green Sources', 'ggs', :class => 'project-link' %>
-       <div class="project-links hidden">
-          <a href="www.octavejournal.com" class="visit-link"> | visit </a>
-          <a class="source-link" href="https://github.com/timsvoice/great_green_sources">| view code</a>
-       </div>        
-      </li>
-      <li class="project">
-        <%= link_to 'Octave Journal', 'octavejournal', :class => 'project-link' %>
-        <div class="project-links hidden">
-          <a href="www.octavejournal.com" class="visit-link"> | visit </a>
-          <a class="source-link" href="http://github.com/timsvoice/living_octave_journal">| view code</a>
-        </div>         
-      </li>
-      <li class="project">
-        <%= link_to 'Mallydoor', 'mallydoor', :class => 'project-link' %>
-        <div class="project-links hidden">
-          <a href="www.mallydoor.com" class="visit-link"> | visit </a>
-          <a class="source-link" href="http://github.com/timsvoice/mallydoor">| view code</a>
-        </div>         
-      </li>
-    </ul><!-- project-list -->
-  </div>
-</div><!-- projects -->
+    <div class="project-container timothyvoice small-12 medium-12 large-6 columns">
+          <div class="project-overlay"></div>
+          <%= image_tag "timothyvoice_hero_x2.png", :class => 'project-image timothyvoice' %>
+          <div class="horizon">
+            <div class="dead-center view">
+              <a href="#" class="button secondary">
+                Personal
+              </a>
+            </div><!-- view -->
+          </div><!-- horizon -->
+      </div><!-- project-container octavejournal-->
+    <div class="project-container ggs small-12 medium-12 large-6 columns">
+          <div class="project-overlay"></div>
+          <%= image_tag "greatgreensources_hero.png", :class => 'project-image ggs' %>
+          <div class="horizon">
+            <div class="dead-center view">
+              <a href="#" class="button secondary">
+                GGS
+              </a>
+            </div><!-- view -->
+          </div><!-- horizon -->
+      </div><!-- project-container ggs-->
+      <div class="project-container octavejournal small-12 medium-12 large-6 columns">
+          <div class="project-overlay"></div>
+          <%= image_tag "octavejournal_hero_2x.png", :class => 'project-image octavejournal' %>
+          <div class="horizon">
+            <div class="dead-center view">
+              <a href="#" class="button secondary">
+                Octave
+              </a>
+            </div><!-- view -->
+          </div><!-- horizon -->
+      </div><!-- project-container octavejournal-->
+      <div class="project-container mallydoor small-12 medium-12 large-6 columns">
+          <div class="project-overlay"></div>
+          <%= image_tag "mallydoor_hero_2x.png", :class => 'project-image mallydoor' %>
+          <div class="horizon">
+            <div class="dead-center view">
+              <a href="#" class="button secondary">
+                Mallydoor
+              </a>
+            </div><!-- view -->
+          </div><!-- horizon -->
+      </div><!-- project-container octavejournal-->      
+    </div><!-- row -->
+  </div><!-- projects -->
 
 <div id="connect" class="connect-band">
   <div class="row">

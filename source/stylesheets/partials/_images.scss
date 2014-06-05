@@ -13,3 +13,35 @@
 .projects-single-hero {
   border-bottom: 0.5rem $branding-color solid;
 }
+
+.brand {
+    height: 2.5rem;
+    width: 2.5rem;
+    .box {
+      fill: none;
+      stroke-width: 100;
+      stroke: $background;
+    }
+    .shadow-group {
+      .shadow {
+        fill: none;
+        stroke: none;
+      }
+      rect {
+        fill: none;
+        stroke: none;
+      }
+    }  
+
+    .shaddow-detail {
+
+    }
+
+    .text {
+
+    }
+
+    polygon {
+      fill: $background;
+    }
+  }

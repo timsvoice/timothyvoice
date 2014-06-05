@@ -1,7 +1,7 @@
 .button.secondary {
   background-color: inherit;
-  @include border-light($dark-gray, 0.0625rem);
-  color: $dark-gray;
+  @include border-light($white, 0.0625rem);
+  color: $white;
   font-size: 1rem;
   font-weight: $light-text;
   font-family: $body-font;
@@ -32,4 +32,8 @@
       @include transition(200ms, color);
     }
   }
+}
+
+.dead-center.view {
+  @include dead-center(156px, 54px);
 }

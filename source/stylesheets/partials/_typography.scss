@@ -93,12 +93,15 @@
 .top-bar-section {
   padding-top: 0.75rem;
   ul, li:not(.has-form) a:not(.button), ul li > a {
-    color: darken($branding-color, 37.5%);
-    font-size: 1.25rem;
-    font-weight: $heavy-text;
-    text-transform: uppercase;
+    font-weight: $light-text;      
+    color: $background;
+    text-transform: lowercase;
+    font-size: 1.35rem;
+    @include breakpoint(small) {
+      font-size: 1.25rem;
+    }
     &:hover {
-      color: black;
+      color: $branding-darker;
     }
   }
 }

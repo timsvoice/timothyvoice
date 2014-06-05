@@ -14,6 +14,42 @@
   margin-bottom: 2rem;
 }
 
+.project-container {
+  margin-bottom: 2rem;
+  .project-image {      
+    position: relative;
+    &.ggs {
+      @include project-shadow($ggs-color);
+    }
+    &.octavejournal {
+      @include project-shadow($octavejournal-color);
+    }
+    &.mallydoor {
+      @include project-shadow($mallydoor-color);
+    }
+    &.timothyvoice {
+      @include project-shadow($branding-color);
+    }
+  }
+  .project-overlay {
+    background-color: $black-overlay;
+    z-index: 2;
+    overflow: hidden;
+    height: 100%;
+    width: 94%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+  }
+  .button {
+    border: 1px white solid;
+    color: white;
+    z-index: 2;
+    background-color: inherit;
+    font-weight: $medium-text;
+  }
+}
+
 .mockup-image, .detail-container {
   padding-top: 2rem;
   background: $white;

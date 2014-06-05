@@ -7,9 +7,10 @@
   z-index: 99;
 }
 
-.top-bar {
+.top-bar, .contain-to-grid {
   @extend #splash;
   height: 4rem;
+  background-color: $branding-color;
 }
 
 .top-bar-section {
