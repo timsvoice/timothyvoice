@@ -1,0 +1,326 @@
+/* =================
+  Global
+==================*/
+
+body.styleguide > * {
+  font-family: $body-font;
+}
+
+body.styleguide {
+  background-color: $background;
+
+.horizon {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  overflow: visible;
+  visibility: visible;
+  display: block;
+}
+
+.dead-center.view {
+  @include dead-center(156px, 54px);
+}
+
+  /* =================
+    Navigation
+  ==================*/
+
+  .navigation {
+
+  }
+
+  .top-bar-section {
+    padding-top: 1rem;
+  }
+
+  .menu-item {
+    margin-right: 2rem;
+    display: inline-block;
+    @include breakpoint(small) {
+      margin-right: 0rem;
+      padding-right: 1rem;
+      padding-left: 0rem;
+    }
+    h4 {
+      font-weight: $light-text;      
+      color: $background;
+      text-transform: lowercase;
+      font-size: 1.35rem;
+      @include breakpoint(small) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .top-bar-menu {
+    li:last-child, .toggle-topbar:last-child {
+      @include breakpoint(small) {
+        padding-right: 0.5rem;
+      }
+    }
+  }
+
+  .toggle-topbar {
+    margin-top: 1rem;
+  }
+
+  /* =================
+    Variables
+  ==================*/
+
+
+  /* =================
+    Structure
+  ==================*/
+
+  .contain-to-grid {
+    background-color: $branding-color;
+  }
+
+  .intro {
+    margin-top: 1rem;
+  }
+
+  .title {
+    display: inline-block;
+  }
+
+  .branding {
+
+  }
+  
+  .img {
+
+  }
+
+  .color-block-group {
+    list-style: none;
+  }
+
+  .color-block {
+    height: 5rem;
+    .primary {
+      background: $light-gray;
+    }
+  }
+
+  .design-pattern-group {
+    margin-top: 1rem;
+  }
+
+  /* =================
+    Typography
+  ==================*/
+  
+  h1, h2, h3, h4, h5 {
+    margin: 0;
+    color: black;
+    font-family: $text-font;
+  }
+
+  p {
+    margin: 0;
+    font-family: $text-font;
+    a {
+      border-bottom:1px dotted;
+      font-weight: $medium-text;
+      color: $branding-darker;
+    }
+  }
+
+  a {
+    color: $branding-color;
+  }
+  
+  .header {
+    font-weight: $medium-text;    
+    font-size: 3rem;
+    line-height: 4.5rem;    
+  }
+
+  .subheader {
+    font-weight: $light-text;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .meta {
+    font-size: 0.8rem;
+    font-weight: $light-text;
+    margin-bottom: 1rem;
+  }
+
+  .body {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: $light-text;
+  }
+
+  .title {
+    padding-top: 0rem;
+    margin: 0;
+    font-weight: $heavy-text;
+    font-size: 8rem;
+    color: $branding-color;
+    @include breakpoint(small) {
+      font-size: 4rem;
+    }
+  }
+
+  .header {
+
+  }
+
+  .subheader {
+
+  }
+
+  .meta {
+
+  }
+
+  .body {
+
+  }  
+
+  .social {
+    color: $branding-color;
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: $light-text;
+    padding: 0.25rem 1rem;
+    border-bottom: 0.25rem solid darken($branding-color, 15%);
+    background-color: $branding-color;
+    color: white ;
+  }
+
+  /* =================
+    UI
+  ==================*/
+
+  .iconography {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    i {
+      font-size: 2rem;
+      color: $branding-darker;
+    }
+  }
+
+  .secondary.button {
+    @extend .button;
+  }
+  
+  .button {
+    color: white;
+    font-weight: $light-text;
+  }
+
+  .primary.button {
+
+  }
+
+  .secondary.button {
+    color: $dark-gray;
+  }
+
+  .branding-image {
+    display: inline-block;
+    float: left;
+  }
+  
+  /*==================
+    Elements
+  ==================*/
+  
+  .photography {
+    margin-bottom: 1rem;
+    .photography-image {      
+      position: relative;
+      @include project-shadow($octavejournal-color);
+    }
+    .photography-overlay {
+      background-color: $black-overlay;
+      z-index: 2;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .button {
+      border: 1px white solid;
+      color: white;
+      z-index: 2;
+      background-color: inherit;
+      font-weight: $medium-text;
+    }
+  }
+
+  
+
+  .color-block {
+    border: 0.25rem solid white;
+
+    &.primary {
+      background: $branding-color;
+    }
+    &.secondary {
+      background: $branding-darker;    
+    }
+    &.third {
+      background: $accent-color;      
+    }
+    &.fourth {
+      background: $highlight-color;
+    }
+  }
+
+
+
+
+  /*==================
+    SVG
+  ==================*/
+
+  //branding
+
+  .brand {
+    height: 3rem;
+    width: 3rem;
+    margin-top: 0.5rem;
+    .box {
+      fill: none;
+      stroke-width: 100;
+      stroke: $background;
+    }
+    .shadow-group {
+      .shadow {
+        fill: none;
+        stroke: none;
+      }
+      rect {
+        fill: none;
+        stroke: none;
+      }
+    }  
+
+    .shaddow-detail {
+
+    }
+
+    .text {
+
+    }
+
+    polygon {
+      fill: $background;
+    }
+  }
+
+}//  body.styleguide

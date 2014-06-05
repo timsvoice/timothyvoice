@@ -58,6 +58,7 @@ body.kickstarter {
 .position-tags-list {
   text-align: center;
   @extend .position-details-list;
+  font-weight: $light-text;
 }
 
 .application-container {
@@ -137,9 +138,9 @@ body.kickstarter {
 }
 
 .application-list-item {
-  font-weight: $light-text;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-weight: $heavy-text;
+  font-size: 1rem;
+  line-height: 1.25rem;
   i {
     font-size: 1.25rem;
     color: $secondary;
@@ -150,8 +151,9 @@ body.kickstarter {
 .application-detail-item {
   @extend .application-list-item;
   font-size: 1rem;
-  font-weight: $light-text;
+  font-weight: $heavy-text;
   a {
+      font-weight: $light-text;
       color: $branding-dark;
     }
   i {
@@ -177,6 +179,7 @@ body.kickstarter {
 
 .position-tags-list-item {
   @extend .position-details-list-item;
+  font-weight: $medium-text;
 }
 
 .application-intro-opener {

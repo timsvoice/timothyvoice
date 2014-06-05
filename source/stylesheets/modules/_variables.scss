@@ -1,18 +1,22 @@
 /* ============================ 
 	Colors
 ============================ */
+
 //base
 $white: hsla(0,0,100%,1);
 $black: hsla(0,0,0%,1);
 $dark-gray: hsla(0,0,30%,1);
 $light-gray: hsla(0,0,70%,1);
+$black-overlay: hsla(0,0,0%,0.3);
+$accent-overlay: hsla(150, 91, 56%, 0.4);
 
 //global
-$branding-color: hsla(202, 89, 58%, 1);//light blue
+$branding-color: hsl(202, 89, 58%);//light blue
 $branding-darker: hsla(202, 89, 21%, 1);//dark blue
 $accent-color: hsla(150, 91, 56%, 1);//seafoam
 $highlight-color: hsla(44, 100, 59%, 1);//yellow
 $compliment: hsla(33, 100, 59%, 1);//yellow
+$background: hsla(30, 19, 94%, 1);//gray
 
 //projects
 $octavejournal-color: hsla(229, 43, 39%, 1);
@@ -24,6 +28,7 @@ $kickstarter: hsla(144, 81, 87%, 1);
 /* ============================ 
 	Typography
 ============================ */
+
 //fonts
 $body-font: "Raleway", Helvetica, Arial, sans-serif;
 $text-font: "Lato", Times, serif;

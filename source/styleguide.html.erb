@@ -1,0 +1,88 @@
+---
+layout: styleguide
+---
+  <div class="navigation contain-to-grid">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">
+            <%= partial "images/branding.svg"  %>
+          </a></h1>
+        </li>
+        <li class="toggle-topbar">
+            <a class="menu-item" href="#">
+            <h4>projects</h4>          
+          </a>
+          <a class="menu-item" href="#">
+            <h4>about</h4>          
+          </a>
+        </li>
+      </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="top-bar-menu right">
+        <li class="menu-item">
+          <h4>projects</h4>
+        </li>
+        <li class="menu-item">
+          <h4>about</h4>
+        </li>
+      </ul>
+
+      <!-- Left Nav Section -->
+      <ul class="left">
+      </ul>
+    </section>
+  </nav>
+  </div><!-- navigation -->
+<div class="container">
+  <div class="row intro">
+    <div class="title small-12 columns">      
+      <h1 class="title">
+       Project Title
+      </h1>      
+    </div><!-- title -->    
+  </div><!-- intro -->
+  <div class="row">
+    <div class="typography small-12 medium-6 columns">
+      <h1 class="header">
+        Header
+      </h1>
+      <h2 class="subheader">
+        Subheader
+      </h2>
+      <p class="meta">
+        meta data
+      </p>
+      <p class="body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, esse, possimus iste rerum cum eligendi provident est officiis illo dolorem. Ea, reprehenderit, officia, saepe <a href="#">enim</a> voluptas ipsam minima beatae ab veniam suscipit eligendi quis ut id officiis quidem perspiciatis sunt magni assumenda dolorum esse alias vitae qui deserunt numquam laudantium.
+      </p>
+      <a href="#">
+        <p class="link">link</p>
+      </a>          
+        <div class="iconography">
+          <a href="#"><h4 class="social">github</h4></a>
+          <a href="#"><h4 class="social">twitter</h4></a>
+          <a href="#"><h4 class="social">email</h4></a>
+        </div><!-- iconography -->
+        <div class="buttons">
+          <a href="#" class="small button">Primary Button</a>
+          <a href="#" class="secondary button">Secondary Button</a>
+        </div><!-- buttons -->
+    </div><!-- typography -->
+      <div class="photography small-12 medium-6 columns">        
+        <div class="photography-image">
+          <div class="photography-overlay"></div>
+          <%= image_tag "octavejournal_hero.png" %>
+          <div class="horizon">
+            <div class="dead-center view">
+              <a href="#" class="button secondary">
+                Octave
+              </a>
+            </div><!-- center-align -->
+          </div><!-- horizon -->
+        </div><!-- photography-image -->
+      </div><!-- photography -->     
+  </div><!-- row -->
+</div><!-- container -->
