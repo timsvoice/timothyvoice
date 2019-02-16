@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Timothy Voice</title>
+    <meta name="description" content="Bits and Bytes related to software engineering and systems design">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <!--[if IE]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <div class='flex-grid'>
+        <div class='flex-grid row'>
+            <div class='flex-grid col blog-summary-container'>
+                <a href="/blog-post">
+                    <h3 class='blog-summary-title'>Debugging an Elastic Beanstalk Deployment Pipeline</h3>
+                </a>
+                <p class='blog-summary-text'>
+                    Replicate your build process locally without Docker’s cache. Check the resulting Docker image and
+                    upload a fresh zip file to EB for deployment to your environment. Run your build pipeline
+                    successfully and get back to work.
+                </p>
+            </div>
+        </div>
+        <div class='flex-grid row'>
+            <div class='flex-grid col blog-body'>
+                <p>
+                    First, some context. Our pipeline consists of a CI build process that is triggered by an update to a
+                    GitHub branch. The build process runs some custom commands, creates a zip file for S3, and then
+                    deploys
+                    that build to Elastic Beanstalk. All this automation is awesome when things are working 🍻, but it
+                    can
+                    leave you feeling powerless if something goes wrong 😭.
+                </p>
+                <p>
+                    As a start, you should understand that Elastic Beanstalk is just the management layer for the
+                    resources
+                    your app uses on AWS, so you’re really debugging the underlying resources and your own deployment
+                    pipeline. Debugging on remote systems can be a nightmare, especially doing so through a GUI like
+                    Elastic
+                    Beanstalk where hunting down information can be confusing.
+                </p>
+                <p>
+                    The first thing to do is to replicate as much of your build process locally as you can, taking care
+                    to
+                    start fresh with every build. There are two big reasons to replicate you build pipeline locally:
+                </p>
+                <p>
+                    You need information and the best place to run an experiment is in an environment you have (nearly)
+                    total control of
+                    Docker will cache a lot of the results from your RUN commands on EB, trapping any build gremlins
+                    👹in a
+                    neat little cage, ready to wreak havoc on your next deployment despite the updates you’ve made. The
+                    tool
+                    you need here is Docker’s <code>--no-cache</code> option so you can flush any nasties right out. Unfortunately
+                    this
+                    isn’t an option on EB (you can’t specify your build commands) so you will need to run this locally
+                    Here’s a quick guide for creating a clean build:
+                </p>
+                <p>
+                    Start with duplicating every command in your CI pipeline: from npm install to your build steps
+                    Build a clean Docker image (without the cache) using this command: docker build --no-cache -t
+                    app_name .
+                    Bundle the Docker image: zip ../version.zip -r * .[^.]*
+                    Run your Docker image locally and make sure you can get the thing working
+                    You should now have either found the source of your pain, or have a nice, fresh zip file you can
+                    upload
+                    to EB.
+                </p>
+                <p>
+                    Upload this zip to Elastic Beanstalk in the Application Versions section of your Application
+                    Environment.
+                    Deploy the uploaded zip to an Application Environment and wait for the build to finish.
+                    If all is well at this point, trigger a new build from your CI (if using one) and with any luck,
+                    your
+                    deployment pipeline will work and you can go back to focusing on building your awesome features
+                    instead
+                    of banging your head against the wall 🎉. If your deployment failed, rinse and repeat the above
+                    steps,
+                    digging deeper into each section to gain more information; you will get there eventually 😬.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134608770-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-134608770-1');
+    </script>
+
+</body>
+
+</html>
