@@ -63,32 +63,63 @@
                     to
                     start fresh with every build. There are two big reasons to replicate you build pipeline locally:
                 </p>
+                <ol>
+                    <li>
+                        <p> You need information and the best place to run an experiment is in an environment you have
+                            (nearly) total control of
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Docker will cache a lot of the results from your RUN commands on EB, trapping any build
+                            gremlins
+                            👹in a
+                            neat little cage, ready to wreak havoc on your next deployment despite the updates you’ve
+                            made. The
+                            tool
+                            you need here is Docker’s <code>--no-cache</code> option so you can flush any nasties right
+                            out.
+                            Unfortunately
+                            this
+                            isn’t an option on EB (you can’t specify your build commands) so you will need to run this
+                            locally
+                        </p>
+                    </li>
+                </ol>
+                <p>Here’s a quick guide for creating a clean build:</p>
+                <ol>
+                    <li>
+                        <p>Start with duplicating every command in your CI pipeline: from <code>npm install</code> to
+                            your build steps</p>
+                    </li>
+                    <li>
+                        <p>Build a clean Docker image (without the cache) using this command:
+                            <code>docker build --no-cache -t app_name .</code></p>
+                    </li>
+                    <li>
+                        <p>Bundle the Docker image: <code>zip ../version.zip -r * .[^.]*</code></p>
+                    </li>
+                    <li>
+                        <p>Run your Docker image locally and make sure you can get the thing working</p>
+                    </li>
+                </ol>
                 <p>
-                    You need information and the best place to run an experiment is in an environment you have (nearly)
-                    total control of
-                    Docker will cache a lot of the results from your RUN commands on EB, trapping any build gremlins
-                    👹in a
-                    neat little cage, ready to wreak havoc on your next deployment despite the updates you’ve made. The
-                    tool
-                    you need here is Docker’s <code>--no-cache</code> option so you can flush any nasties right out. Unfortunately
-                    this
-                    isn’t an option on EB (you can’t specify your build commands) so you will need to run this locally
-                    Here’s a quick guide for creating a clean build:
-                </p>
-                <p>
-                    Start with duplicating every command in your CI pipeline: from npm install to your build steps
-                    Build a clean Docker image (without the cache) using this command: docker build --no-cache -t
-                    app_name .
-                    Bundle the Docker image: zip ../version.zip -r * .[^.]*
-                    Run your Docker image locally and make sure you can get the thing working
                     You should now have either found the source of your pain, or have a nice, fresh zip file you can
                     upload
                     to EB.
                 </p>
+                <ol>
+                    <li>
+                        <p>
+                            Upload this zip to Elastic Beanstalk in the Application Versions section of your Application
+                            Environment.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Deploy the uploaded zip to an Application Environment and wait for the build to finish.</p>
+                    </li>
+                </ol>
                 <p>
-                    Upload this zip to Elastic Beanstalk in the Application Versions section of your Application
-                    Environment.
-                    Deploy the uploaded zip to an Application Environment and wait for the build to finish.
                     If all is well at this point, trigger a new build from your CI (if using one) and with any luck,
                     your
                     deployment pipeline will work and you can go back to focusing on building your awesome features
