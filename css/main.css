@@ -31,9 +31,19 @@ a {
     flex-direction: row;
 }
 
+.flex-grid .row .left {
+    text-align: left
+}
+
 .flex-grid .col {
     width: 50%;
     max-width: 615px;
+}
+
+.flex-grid .col .left {
+    width: 50%;
+    max-width: 615px;
+    align-self: flex-start;
 }
 
 @media (max-width: 1000px) {
